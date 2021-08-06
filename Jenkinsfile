@@ -9,7 +9,7 @@ pipeline {
 
     stage('upload') {
       steps {
-        sh 'aws s3 cp build/libs/application.war s3://jenkins-ci-cd-application/application.war --region ap-northeast-2'
+        sh 'aws s3 cp build/libs/application.war s3://jenkins-final-version-s3/application.war --region ap-northeast-1'
       }
     }
 
